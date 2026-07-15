@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pr-BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <header>
         <h1>Curso - Dev do Futuro</h1>
         <nav>
-            <ul type="none">
+            <ul>
                 <li><a href="#sessao-apresentacao">Apresentação</a></li>
                 <li><a href="#sessao-formulário">Inscreva-se</a></li>
             </ul>
@@ -21,40 +21,40 @@
             <p>Bem-vindo a novas oportunidades! Se você está aqui, com certeza já está indo no caminho da melhoria, para você poder participar do nosso curso de imersão sobre desenvolvimento, basta preencher o formulário logo abaixo.</p>
         </section>
         <section id="sessao-formulário">
+            <!--Método Post para tratamento de dados sensíveis-->
+            <form action="" method="POST">
             <fieldset>
                 <legend>Formulário para participar do curso!</legend>
-                <form action="hello world!" method="POST">
-                    <label for="nome">Nome: </label><input type="name" id="nome" name="nome" placeholder="João">
-                    <label for="email">Email: </label><input type="email" id="email" name="email" placeholder="email@exemplo.com">
-                    <label for="idade">Idade: </label><input type="age" id="idade" name="idade" placeholder="18">
+                    <label for="nome">Nome: </label><input type="text" id="nome" name="nome" placeholder="João"><br>
+                    <label for="email">Email: </label><input type="email" id="email" name="email" placeholder="email@exemplo.com"><br>
+                    <label for="idade">Idade: </label><input type="number" id="idade" name="idade" placeholder="18"><br>
                     <label for="telefone">Telefone: </label><input type="tel" id="telefone" name="telefone" placeholder="(ddd)99999-9999">
-                    <label for="indicacao">Você veio por qual meio?</label><select id="indicacao">
-                        <optgroup>Redes Sociais
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
+                    <!--Mini fieldset para agrupamento do tipo Radio, ao qual pode ser identificado por IDs, mas, o name deve seguir o mesmo padrão para todos-->
+                    <fieldset id="recomendacao">
+                        <legend>Qual é a probabilidade de você nos recomendar?</legend><br>
+                        <input type="radio" id="recomendacao_baixa" name="recomendacao" value="recomendacao_baixa"><label for="recomendacao_baixa">Baixa</label>
+                        <input type="radio" id="recomendacao_media" name="recomendacao" value="recomendacao_media"><label for="recomendacao_media">Média</label>
+                        <input type="radio" id="recomendacao_alta" name="recomendacao" value="recomendacao_alta"><label for="recomendacao_alta">Alta</label>
+                    </fieldset>
+                    <label for="indicacao">Você veio por qual meio?</label><br>
+                    <select id="indicacao" name="indicacao">
+                        <optgroup label="Redes Sociais">
+                            <option value="Instagram">Instagram</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Dev">Dev.to</option>
                         </optgroup>
-                        <optgroup>Divulgação
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                        </optgroup>
-                        <optgroup>Pessoal
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
-                            <option value=""></option>
+                        <optgroup label="Divulgação">
+                            <option value="Youtube">Youtube</option>
+                            <option value="Linkedin">Linkedin</option>
+                            <option value="Anuncio">Anúncio</option>
                         </optgroup>
                     </select>
-                    <textarea></textarea>
+                    <br>
+                    <textarea id="comentario" name="comentario" rows="5" cols="40" placeholder="Deixe seu comentário:"></textarea>
+                    <br>
                     <button type="submit">Enviar</button>
-                </form>
             </fieldset>
+            </form>
         </section>
     </main>
     <footer>
