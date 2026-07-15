@@ -27,8 +27,8 @@ O projeto consiste em 6 módulos com conteúdos específicos por segmento, organ
 6. Módulo - Projeto Final
     Sistema fullstack completo (SaaS), integrando front-end e back-end, com deploy, containerização (Docker) e publicação em cloud.
 
-📂 Estrutura do Repositório
-
+## 📂 Estrutura do Repositório
+```
 Roadmap_Fullstack/
 ├── 01-html/
 ├── 02-css/
@@ -37,12 +37,13 @@ Roadmap_Fullstack/
 ├── 05-backend/
 ├── 06-projeto-final/
 └── README.md
+```
 
-🔗 Acompanhe a Jornada
+## 🔗 Acompanhe a Jornada
 
-💼 LinkedIn: https://www.linkedin.com/in/cândido-norberto-kuerten-651bb4275/
-✍️ Dev.to: https://dev.to/candidonkuerten346
-🌐 Portfólio: [em breve]
+- 💼 LinkedIn: https://www.linkedin.com/in/cândido-norberto-kuerten-651bb4275/
+- ✍️ Dev.to: https://dev.to/candidonkuerten346
+- 🌐 Portfólio: [em breve]
 
-
-Este README é atualizado conforme o projeto avança. Feedbacks e sugestões são sempre bem-vindos!
+---
+*Este README é atualizado conforme o projeto avança. Feedbacks e sugestões são sempre bem-vindos!*
