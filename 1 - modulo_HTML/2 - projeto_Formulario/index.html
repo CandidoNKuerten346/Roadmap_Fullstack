@@ -30,12 +30,12 @@
             <form action="" method="POST">
                 <fieldset>
                     <legend>Formulário para participar do curso!</legend>
-                    <label for="nome">Nome: </label><input type="text" id="nome" name="nome" placeholder="João"><br>
+                    <label for="nome">Nome: </label><input type="text" id="nome" name="nome" placeholder="João" required><br>
                     <label for="email">Email: </label><input type="email" id="email" name="email"
-                        placeholder="email@exemplo.com"><br>
+                        placeholder="email@exemplo.com" required><br>
                     <label for="idade">Idade: </label><input type="number" id="idade" name="idade" placeholder="18"><br>
                     <label for="telefone">Telefone: </label><input type="tel" id="telefone" name="telefone"
-                        placeholder="(ddd)99999-9999">
+                        placeholder="(ddd)99999-9999" required>
                     <!--Mini fieldset para agrupamento do tipo Radio, ao qual pode ser identificado por IDs, mas, o name deve seguir o mesmo padrão para todos-->
                     <fieldset id="recomendacao">
                         <legend>Qual é a probabilidade de você nos recomendar?</legend><br>
@@ -61,7 +61,7 @@
                     </select>
                     <br>
                     <textarea id="comentario" name="comentario" rows="5" cols="40"
-                        placeholder="Deixe seu comentário:"></textarea>
+                        placeholder="Deixe seu comentário:" maxlength="500"></textarea>
                     <br>
                     <button type="submit">Enviar</button>
                 </fieldset>
