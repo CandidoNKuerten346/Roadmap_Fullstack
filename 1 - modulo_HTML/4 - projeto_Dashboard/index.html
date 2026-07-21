@@ -1,40 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Dashboard">
     <title>Projeto - Dashboard Estático</title>
 </head>
-<body>
-    <header>
-        <h1></h1>
-        <nav>
 
-        </nav>
+<body>
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#sessao-resumo">Resumo da Jornada</a></li>
+            <li><a href="#sessao-modulos">Módulos</a></li>
+        </ul>
+    </nav>
+    <header id="sessao-cabecalho">
+        <h1>Progresso na Jornada DEV</h1>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Aqui você pode localizar o módulo que quer estudar:</legend>
+                <label for="selecao">Módulos:
+                    <select id="selecao" name="selecao">
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JS">JavaScript</option>
+                        <option value="REACT">React</option>
+                        <option value="SQL">Banco de Dados</option>
+                    </select>
+                </label>
+                <button type="submit">Buscar</button>
+            </fieldset>
+        </form>
     </header>
     <main>
-        <section>
-            <h2></h2>
-            <article>
-                <h3></h3>
-            </article>
+        <section id="sessao-resumo">
+            <h2>Resumo da Jornada</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Módulo</th>
+                        <th>Período</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 - HTML</td>
+                        <td>1ª Semana</td>
+                        <td>Concluído</td>
+                    </tr>
+                    <tr>
+                        <td>2 - CSS</td>
+                        <td>2ª Semana</td>
+                        <td>Concluído</td>
+                    </tr>
+                    <tr>
+                        <td>3 - JavaScript</td>
+                        <td>3ª Semana</td>
+                        <td>Em andamento</td>
+                    </tr>
+                    <tr>
+                        <td>4 - React</td>
+                        <td>4ª Semana</td>
+                        <td>Pendente</td>
+                    </tr>
+                    <tr>
+                        <td>5 - Banco de Dados</td>
+                        <td>5ª Semana</td>
+                        <td>Pendente</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Total de Módulos Concluídos</th>
+                        <th colspan="2">Período Atual</th>
+                    </tr>
+                    <tr>
+                        <td>2 Módulos</td>
+                        <td colspan="2">3ª Semana</td>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
-        <section>
-            <h2></h2>
+        <section id="sessao-modulos">
+            <h2>Módulos</h2>
             <article>
-                <h3></h3>
+                <h3>HTML</h3>
+                <p><strong>HTML (HyperText Markup Language) é a linguagem de marcação responsável por
+                        estruturar o conteúdo de
+                        uma página web</strong> — títulos, parágrafos, links, imagens e formulários. Ele não define
+                    aparência nem
+                    comportamento, apenas organiza e dá significado ao conteúdo.<br><br>
+                Como no exemplo abaixo:</p>
+                <pre>
+                    <code>
+                        &lt;article&gt;
+                        &lt;h2>Título do Artigo&lt;/h2&gt;
+                        &lt;p>Conteúdo do parágrafo.&lt;/p&gt;
+                        &lt;/article&gt;
+                    </code>
+                </pre>
             </article>
-        </section>
-        <section>
-            <h2></h2>
             <article>
-                <h3></h3>
+                <h3>CSS</h3>
+                <p><strong>CSS (Cascading Style Sheets) é a linguagem responsável pela aparência visual da
+                        página</strong> —
+                    cores, espaçamento, layout e responsividade. Ele separa o "como se parece" do "o que é",
+                    permitindo estilizar o mesmo HTML de formas completamente diferentes.<br><br>
+                Como no exemplo abaixo:</p>
+                <pre>
+                    <code>
+                        article {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 12px;
+                            padding: 16px;
+                            }
+                    </code>
+                </pre>
+            </article>
+            <article>
+                <h3>JavaScript</h3>
+                <p><strong>JavaScript é a linguagem de programação que dá interatividade e lógica à página</strong> —
+                    manipula
+                    elementos, responde a cliques e eventos, e consome dados de APIs em tempo real. É o que
+                    transforma uma página estática em uma aplicação dinâmica.<br><br>
+                Como no exemplo abaixo:</p>
+                <pre>
+                    <code>
+                        document.querySelector("button").addEventListener("click", () => {
+                            alert("Botão clicado!");
+                        });
+                    </code>
+                    </pre>
+            </article>
+            <article>
+                <h3>React</h3>
+                <p>Módulo que sera implementado em breve.</p>
+            </article>
+            <article>
+                <h3>Banco de Dados</h3>
+                <p>Módulo que sera implementado em breve.</p>
             </article>
         </section>
     </main>
     <footer>
-        <p><small></small></p>
+        <p><small>Todos os direitos reservados.</small></p>
     </footer>
 </body>
+
 </html>
