@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <nav id="sidebar">
+    <nav id="sidebar" aria-label="Atalho para Seções">
         <ul>
             <li><a href="#sessao-resumo">Resumo da Jornada</a></li>
             <li><a href="#sessao-modulos">Módulos</a></li>
@@ -29,19 +29,30 @@
                         <option value="SQL">Banco de Dados</option>
                     </select>
                 </label>
+                <label>Nome: <input type="text" placeholder="João"></label>
                 <button type="submit">Buscar</button>
             </fieldset>
         </form>
     </header>
     <main>
+        <section id="sessao-cards">
+            <div class="card">
+                <h2>Módulos Concluídos</h2>
+                <p>2 Módulos: HTML, CSS</p>
+            </div>
+            <div class="card">
+                <h2>Período Atual</h2>
+                <p>3ª Semana</p>
+            </div>
+        </section>
         <section id="sessao-resumo">
             <h2>Resumo da Jornada</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Módulo</th>
-                        <th>Período</th>
-                        <th>Status</th>
+                        <th scope="col">Módulo</th>
+                        <th scope="col">Período</th>
+                        <th scope="col">Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -73,8 +84,8 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th>Total de Módulos Concluídos</th>
-                        <th colspan="2">Período Atual</th>
+                        <th scope="col">Total de Módulos Concluídos</th>
+                        <th colspan="2" scope="col">Período Atual</th>
                     </tr>
                     <tr>
                         <td>2 Módulos</td>
@@ -82,6 +93,15 @@
                     </tr>
                 </tfoot>
             </table>
+            <nav aria-label="Paginação da tabela">
+  <ul>
+    <li><a href="#pagina-1">Anterior</a></li>
+    <li><a href="#pagina-1" aria-current="page">1</a></li>
+    <li><a href="#pagina-2">2</a></li>
+    <li><a href="#pagina-3">3</a></li>
+    <li><a href="#pagina-2">Próxima</a></li>
+  </ul>
+</nav>
         </section>
         <section id="sessao-modulos">
             <h2>Módulos</h2>
@@ -137,11 +157,11 @@
             </article>
             <article>
                 <h3>React</h3>
-                <p>Módulo que sera implementado em breve.</p>
+                <p>Módulo que será implementado em breve.</p>
             </article>
             <article>
                 <h3>Banco de Dados</h3>
-                <p>Módulo que sera implementado em breve.</p>
+                <p>Módulo que será implementado em breve.</p>
             </article>
         </section>
     </main>
