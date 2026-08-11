@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Faça parte do nosso curso, preencha as informações e recebe as informações sobre como participar!">
+    <link rel="stylesheet" href="style.css">
+    <title>Dev algum Dia - Inscreva-se</title>
+</head>
+
+<body>
+    <header>
+        <h1>Curso - Dev algum Dia</h1>
+    </header>
+    <main>
+        <section id="sessao-apresentacao">
+            <h3>O que você vai aprender:</h3>
+            <p><span>Aprenda a programar do zero, com uma imersão prática pensada para quem quer começar uma nova carreira.</span>
+                Preencha o formulário abaixo e receba todas as informações para participar.</p>
+            <p><span>Matérias:</span></p>
+            <ul>
+                <li>Lógica de programação do absoluto zero</li>
+                <li>HTML, CSS e JavaScript na prática</li>
+                <li>Projetos reais para construir seu portfólio</li>
+                <li>Boas práticas usadas no mercado de tecnologia</li>
+            </ul>
+        </section>
+        <section id="sessao-descricao">
+            <h3>Sobre o curso:</h3>
+            <ul>
+                <li><span>Duração:</span> 8 semanas</li>
+                <li><span>Nível:</span> Iniciante, sem experiência prévia necessária</li>
+                <li><span>Formato:</span> Online, com aulas ao vivo</li>
+                <li><span>Carga horária:</span> 3 encontros por semana</li>
+            </ul>
+            <h3>Por que fazer o Dev algum dia</h3>
+            <p>A área de tecnologia segue crescendo e abrindo portas para quem está começando agora. O Curso - Dev algum Dia foi criado para quem quer dar o primeiro passo real rumo a uma nova carreira — sem enrolação, direto para a prática, construindo projetos desde a primeira semana.</p>
+        </section>
+        <section id="sessao-formulario">
+            <h3>Preencha o formulário abaixo, para participar do curso:</h3>
+            <form action="" method="POST">
+                <fieldset>
+                    <div><label for="nome">Nome <br><input type="text" id="nome" name="nome" placeholder="Ex: João"
+                            required></label>
+                        <label for="email">Email <br><input type="email" id="email" name="email"
+                            placeholder="Ex: email@exemplo.com" required></label>
+                    </div>
+                    <div>
+                        <label for="idade">Idade <br><input type="number" id="idade" name="idade"
+                            placeholder="Ex: 18"></label>
+                        <label for="telefone">Telefone <br><input type="tel" id="telefone" name="telefone"
+                            placeholder="Ex: (99) 99999-9999" required></label>
+                    </div>
+                    <!--Mini fieldset para agrupamento do tipo Radio, ao qual pode ser identificado por IDs, mas, o name deve seguir o mesmo padrão para todos-->
+                    <fieldset id="recomendacao">
+                        <legend>Qual a probabilidade de você recomendar nosso curso para conhecidos(as)?</legend>
+                        <label for="recomendacao_baixa"><input type="radio" id="recomendacao_baixa" name="recomendacao"
+                            value="recomendacao_baixa">Baixa</label>
+                        <label for="recomendacao_media"><input type="radio" id="recomendacao_media" name="recomendacao"
+                            value="recomendacao_media">Média</label>
+                        <label for="recomendacao_alta"><input type="radio" id="recomendacao_alta" name="recomendacao" value="recomendacao_alta">Alta</label>
+                    </fieldset>
+                    <div>
+                        <label for="indicacao">Você veio por qual meio?<br>
+                        <select id="indicacao" name="indicacao">
+                            <optgroup label="Redes Sociais">
+                                <option value="Instagram">Instagram</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Dev">Dev.to</option>
+                            </optgroup>
+                            <optgroup label="Divulgação">
+                                <option value="Youtube">Youtube</option>
+                                <option value="Linkedin">Linkedin</option>
+                                <option value="Anuncio">Anúncio</option>
+                            </optgroup>
+                        </select>
+                        </label>
+                    </div>
+                    <label for="comentario">Deixe seu comentário:<br>
+                    <textarea id="comentario" name="comentario" rows="5" cols="40"
+                            maxlength="500"></textarea>
+                            </label>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+        <section id="sessao-perguntas">
+            <h3>Perguntas Frequentes</h3>
+            <dl>
+                <dt>Preciso saber programar antes de começar?</dt>
+                <dd>Não. O curso foi desenhado para quem nunca escreveu uma linha de código.</dd>
+                <dt>O curso é gratuito?</dt>
+                <dd>A parte inicial do curso SIM!</dd>
+                <dt>Vou receber certificado?</dt>
+                <dd>Sim, ao concluir todas as etapas do curso.</dd>
+                <dt>Quanto tempo por dia preciso dedicar?</dt>
+                <dd>Recomendamos de 1 a 2 horas por dia para acompanhar o ritmo das aulas e exercícios.</dd>
+                <dt>Preciso de algum equipamento específico?</dt>
+                <dd>Não. Um computador com acesso à internet já é suficiente para começar.</dd>
+            </dl>
+        </section>
+        <section id="sessao-depoimentos">
+            <h3>Depoimentos sobre o curso</h3>
+            <div>
+            <article class="card">
+                <p><span>Nome:</span> João</p>
+                <p><span>Relato:</span> Entrei sem saber nada de programação e hoje já consigo construir minhas próprias páginas. O curso me deu a confiança que eu precisava para mudar de carreira.</p>
+            </article>
+            <article class="card">
+                <p><span>Nome:</span> Maria</p>
+                <p><span>Relato:</span> Trabalhava com atendimento e sempre quis migrar para tecnologia, mas não sabia por onde começar. As aulas práticas e o suporte da equipe fizeram toda a diferença — hoje já estou aplicando para minhas primeiras vagas como desenvolvedor júnior.</p>
+            </article>
+            <article class="card">
+                <p><span>Nome:</span> Carlos</p>
+                <p><span>Relato:</span> O que mais gostei foi a proposta de aprender fazendo projetos reais desde a primeira semana. Isso me ajudou a montar um portfólio antes mesmo de terminar o curso.</p>
+            </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><small>Todos os direitos reservados.</small></p>
+        <p><small>Todas as informações do projeto são meramente ilustrativas.</small></p>
+    </footer>
+</body>
+
+</html>
